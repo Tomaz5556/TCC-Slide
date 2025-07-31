@@ -1,0 +1,123 @@
+%--------------------------------------------%
+% Template Beamer para Apresentações da UFRN %
+% by alcemygvseverino@gmail.com              %
+% Baseado em MIT Beamer Template			 %
+% versao 1.1								 %
+% Atualizado em 14/05/2016					 %
+%--------------------------------------------%
+\documentclass[handout,t]{beamer}
+% Para alterar a linguagem do documento
+\usepackage[portuges]{babel}
+% Para aceitar caracteres especias deretamente do teclado
+\usepackage[utf8]{inputenc}
+% Para seguir as normas da ABNT de citacao e referencias
+\usepackage[alf]{abntex2cite}
+% Para incluir figuras
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[caption=false]{subfig}
+% Para melhor ajuste da posisao das figuras
+\usepackage{float}
+% Para ajustar as dimensoes do layout da pagina
+\usepackage{geometry}
+% Para formatar estrutura e informacoes de formulas matematicas
+\usepackage{amsmath}
+% Para incluir simbolos especiais em formulas matematicas
+\usepackage{amssymb, amsfonts}
+% Para incluir links nas referencias
+\usepackage{url}
+% Para incluir paginas de documentos .pdf externos
+\usepackage{pgfpages}
+% Para ajustar o estilo dos contadores
+\usepackage{enumerate}
+% Para modificar a cor do texto
+\usepackage{color}
+% Para incluir condicoes
+\usepackage{ifthen}
+% Para colocar legendas em algo que nao e float
+\usepackage{capt-of}
+% Para definir o tema do slide
+\usetheme{Berlin}
+% Para difinir cores e background
+\usecolortheme{ufrn}
+% Para incluir vídeo
+%\usepackage{movie15}
+% Para espaçamento
+\usepackage{setspace} 
+% Para diagrama
+\usepackage[tikz]{bclogo}
+\usepackage{smartdiagram}
+\usepackage{metalogo}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows.meta}
+% Tabelas
+\usepackage{colortbl}
+% Para algoritmos
+\usepackage{algorithmic}
+\usepackage[english, ruled, linesnumbered]{algorithm2e}
+%\usepackage[portugues, ruled, linesnumbered]{algorithm2e}
+% Para numerar as figuras
+\setbeamertemplate{caption}[numbered]
+
+% Título
+\title[Trabalho de Conclusão de Curso]{
+	Plataforma Web para Exibição de Horários Acadêmicos no IFNMG - Campus Salinas}
+% Data
+\date{
+	2025}
+% Autores
+\author[Autor: Tomaz Martins Batista]{
+	Tomaz Martins Batista\\
+	Orientador: Leonardo Humberto Guimarães Silva\\
+	\vspace{0.5cm}}
+% Instituto
+\institute[]{
+%	\inst{1}%
+%	\url{usuario@mail.com}\\
+%	\vspace{0.25cm}
+%	\inst{2}%
+	Bacharelado em Sistemas de informação\\
+	Instituto Federal do Norte de Minas Gerais - Campus Salinas\\
+	\vspace{0.5cm}}
+% Logo do canto inferior direito
+\pgfdeclareimage[height=0.6cm]{logo_IFNMG}{figuras/salinas_horizontal_jpg.jpg}
+\logo{
+	\vspace*{-0.25cm}
+	\pgfuseimage{logo_IFNMG}
+	\hspace*{-0.05cm}}
+
+
+\begin{document}
+% Sumário
+\frame{\titlepage}
+\section[]{}
+%\begin{frame}{Sumário}
+%	\tableofcontents
+%\end{frame}
+
+\include{tex/Sec1_Introducao}
+
+\include{tex/Sec2_Objetivos}
+
+\include{tex/Sec3_Revisao}
+
+\include{tex/Sec4_Metodologia}
+
+\include{tex/Sec5_Resultados}
+
+\include{tex/Sec6_Conclusao}
+
+% Referencias
+%\include{tex/referencias/referencias}
+
+% Agradecimentos
+\section{}
+\begin{frame}{Agradecimentos}
+
+\end{frame}
+
+\begin{frame}{Contato}
+
+\end{frame}
+
+\end{document}
