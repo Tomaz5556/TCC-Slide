@@ -2,54 +2,95 @@
 
 \begin{frame}{Metodologia}
     \begin{itemize}
-        \item Etapas Concluídas: \vspace{0.5cm}
+        \item Levantamento de Requisitos: \vspace{0.5cm}
               \begin{itemize}
-                  \item Levantamento de Requisitos: \vspace{0.5cm}
-                        \begin{itemize}
-                            \item Etapa fundamental no desenvolvimento do sistema; \vspace{0.25cm}
-                            \item A técnica utilizada: Entrevista; \vspace{0.25cm}
-                            \item Participação: Coordenador de Ensino Superior. \vspace{0.25cm}
-                        \end{itemize}
+                  \item Etapa fundamental no desenvolvimento do sistema; \vspace{0.5cm}
+                  \item A técnica utilizada: Entrevista; \vspace{0.5cm}
+                  \item Participação: Coordenador de Ensino Superior. \vspace{0.5cm}
               \end{itemize}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Metodologia}
+\begin{frame}{Levantamento de Requisitos}
     \begin{itemize}
-        \item A condução da entrevista foi realizada conforme os seguintes passos: \vspace{0.25cm}
+        \item A condução da entrevista foi realizada conforme os seguintes passos: \vspace{0.5cm}
               \begin{itemize}
-                  \item Preparação: \vspace{0.25cm}
+                  \item Preparação: \vspace{0.5cm}
                         \begin{itemize}
-                            \item Agendamento; \vspace{0.25cm}
-                            \item Objetivos. \vspace{0.25cm}
+                            \item Agendamento; \vspace{0.5cm}
+                            \item Objetivos. \vspace{0.5cm}
                         \end{itemize}
-                  \item Entrevista; \vspace{0.25cm}
-                  \item Perguntas; \vspace{0.25cm}
-                  \item Documentação: \vspace{0.25cm}
-                        \begin{itemize}
-                            \item Validação: Organização dos horários e Problemas identificados. \vspace{0.25cm}
-                        \end{itemize}
+                  \item Entrevista; \vspace{0.5cm}
+                  \item Perguntas; \vspace{0.5cm}
               \end{itemize}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Metodologia}
+\begin{frame}{Levantamento de Requisitos}
     \begin{itemize}
-        \item Protótipo de Interface: \vspace{0.5cm}
+        \item Documentação: \vspace{0.5cm}
+              \begin{itemize}
+                  \item Organização dos horários \vspace{0.5cm}
+                  \item Problemas identificados \vspace{0.5cm}
+                  \begin{itemize}
+                    \item As Figuras 1 e 2 apresentam as guias da planilha utilizada para exibição dos horários
+                  \end{itemize}
+              \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Levantamento de Requisitos}
+    \begin{figure}
+        \centering
+        \vspace{-0.5cm}
+        \caption{Guia ``Horário - Ensino Médio''}
+        \vspace{-0.2cm}
+        \includegraphics[width=0.9\textwidth]{figuras/plan-ant-1.png}
+        \\ % Quebra de linha para separar a imagem da fonte
+        \small Fonte: Elaborado pelo autor (2024)
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Levantamento de Requisitos}
+    \begin{figure}
+        \centering
+        \vspace{-0.5cm}
+        \caption{Guia ``Horário - Graduação''}
+        \vspace{-0.2cm}
+        \includegraphics[width=0.9\textwidth]{figuras/plan-ant-2.png}
+        \\ % Quebra de linha para separar a imagem da fonte
+        \small Fonte: Elaborado pelo autor (2024)
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Levantamento de Requisitos}
+    \begin{itemize}
+        \item Documentação: \vspace{0.5cm}
+              \begin{itemize}
+                  \item Solução proposta \vspace{0.5cm}
+                  \item Funcionalidades desejadas \vspace{0.5cm}
+              \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Front-end}
+    \begin{itemize}
+        \item Protótipo: \vspace{0.5cm}
               \begin{itemize}
                   \item Figma; \vspace{0.5cm}
               \end{itemize}
-        \item Desenvolvimento de Interface: \vspace{0.5cm}
+        \item Desenvolvimento: \vspace{0.5cm}
               \begin{itemize}
                   \item Next.js; \vspace{0.5cm}
                   \item Tailwind CSS. \vspace{0.5cm}
               \end{itemize}
+        \item Justificativa de uso da stack. \vspace{0.5cm}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Metodologia}
+\begin{frame}{Back-end}
     \begin{itemize}
-        \item Google Sheets como Banco de Dados: \vspace{0.25cm}
+        \item Google Sheets como banco de dados: \vspace{0.5cm}
               \begin{itemize}
                   \item Benefícios: \vspace{0.25cm}
                         \begin{itemize}
@@ -66,75 +107,108 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Metodologia}
+\begin{frame}{Back-end}
     \begin{itemize}
-        \item Google Sheets API; \vspace{0.25cm}
-        \item Implementação do Back-end: Spring Boot \vspace{0.25cm}
+        \item Implementação: \vspace{0.5cm}
               \begin{itemize}
-                  \item Essencial para estabelecer a conexão com a API do Google Sheets; \vspace{0.25cm}
-                  \item Configurada para permitir apenas operações de leitura. \vspace{0.25cm}
+                  \item Spring Boot: \vspace{0.5cm}
+                        \begin{itemize}
+                            \item Essencial para estabelecer a conexão com a API do Google Sheets; \vspace{0.5cm}
+                            \item Configurada para permitir apenas operações de leitura. \vspace{0.5cm}
+                        \end{itemize}
               \end{itemize}
-        \item Integração Front-end com Back-end: \vspace{0.25cm}
+        \item Arquitetura; \vspace{0.5cm}
+        \item Justificativa de uso da stack; \vspace{0.5cm}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Integração Front-end com Back-end}
+    \begin{itemize}
+        \item Por meio de uma API RESTful; \vspace{0.5cm}
+        \item Envio e retorno de dados; \vspace{0.5cm}
+        \item Alterações feitas no Google Sheets apareceram automaticamente na plataforma; \vspace{0.5cm}
+        \item Segurança e controle de acesso. \vspace{0.5cm}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Deploy}
+    \begin{itemize}
+        \item Front-end: Vercel \vspace{0.5cm}
+        \item Back-end: Koyeb \vspace{0.5cm}
               \begin{itemize}
-                  \item Por meio de uma API RESTful; \vspace{0.25cm}
-                  \item Alterações feitas no Google Sheets apareceram automaticamente na plataforma. \vspace{0.25cm}
+                  \item Uso do Docker; \vspace{0.25cm}
               \end{itemize}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Metodologia}
+\begin{frame}{Armazenamento do Código e Integração}
     \begin{itemize}
-        \item Deploy: \vspace{0.5cm}
+        \item Github \vspace{0.5cm}
+        \item Conta do GitHub vinculada \vspace{0.5cm}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Ambiente de Desenvolvimento}
+    \begin{itemize}
+        \item Visual Studio Code \vspace{0.5cm}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Avaliação da Plataforma}
+    \begin{itemize}
+        \item Para avaliar a eficácia da plataforma. \vspace{0.5cm}
+        \item A técnica utilizada: Entrevista; \vspace{0.5cm}
+        \item Participação: Coordenador de Ensino Superior.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Avaliação da Plataforma}
+    \begin{itemize}
+        \item A condução da entrevista foi realizada conforme os seguintes passos: \vspace{0.5cm}
               \begin{itemize}
-                  \item Front-end: Vercel \vspace{0.5cm}
-                  \item Back-end: Koyeb \vspace{0.5cm}
+                  \item Preparação: \vspace{0.5cm}
                         \begin{itemize}
-                            \item Uso do Docker; \vspace{0.25cm}
+                            \item Agendamento; \vspace{0.5cm}
+                            \item Objetivos. \vspace{0.5cm}
                         \end{itemize}
+                  \item Entrevista; \vspace{0.5cm}
+                  \item Perguntas; \vspace{0.5cm}
               \end{itemize}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Metodologia}
-    \begin{itemize}
-        \item Etapas Não Concluídas: \vspace{0.25cm}
-              \begin{itemize}
-                  \item Avaliação da Plataforma: \vspace{0.2cm}
-                        \begin{itemize}
-                            \item Baseada na percepção dos membros da gestão acadêmica; \vspace{0.2cm}
-                            \item Objetivo: verificar se a plataforma atende às necessidades do setor. \vspace{0.2cm}
-                        \end{itemize}
-                  \item Abordando questões essenciais como: \vspace{0.2cm}
-                        \begin{itemize}
-                            \item Usabilidade e navegação; \vspace{0.2cm}
-                            \item Eficiência na exibição dos horários; \vspace{0.2cm}
-                            \item Redução de dificuldades operacionais; \vspace{0.2cm}
-                            \item Satisfação geral; \vspace{0.2cm}
-                            \item Garantia de Disponibilidade. \vspace{0.2cm}
-                        \end{itemize}
-              \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Metodologia}
-    \begin{itemize}
-        \item Implementação de Melhorias e Atualizações: \vspace{0.5cm}
-              \begin{itemize}
-                  \item Com base em sugestões e críticas na avaliação; \vspace{0.5cm}
-                  \item Serão analisadas conforme: \vspace{0.5cm}
-                        \begin{itemize}
-                            \item Viabilidade técnica; \vspace{0.25cm}
-                            \item Relevância para os usuários. \vspace{0.25cm}
-                        \end{itemize}
-              \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Metodologia}
+\begin{frame}{Avaliação da Plataforma}
     \begin{itemize}
         \item Documentação: \vspace{0.5cm}
               \begin{itemize}
-                  \item Para garantir manutenção e funcionamento do sistema; \vspace{0.5cm}
+                  \item Usabilidade e navegação \vspace{0.5cm}
+                  \item Eficiência na exibição dos horários \vspace{0.5cm}
+                  \item Redução de dificuldades operacionais \vspace{0.5cm}
+                  \item Satisfação geral \vspace{0.5cm}
+                  \item Melhorias e atualizações \vspace{0.5cm}
+                  \item Garantia de Disponibilidade \vspace{0.5cm}
+              \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Implementação de Melhorias e Atualizações}
+    \begin{itemize}
+        \item O histórico das versões desenvolvidas até o momento: \vspace{0.5cm}
+              \begin{itemize}
+                  \item v.1.0.0 \vspace{0.5cm}
+                  \item v.2.0.0 \vspace{0.5cm}
+              \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Documentação}
+    \begin{itemize}
+        \item Para garantir a correta manutenção e funcionamento da plataforma \vspace{0.5cm}
+        \item Essa documentação abordou os seguintes aspectos: \vspace{0.5cm}
+              \begin{itemize}
+                  \item Estrutura e organização dos dados \vspace{0.5cm}
+                  \item Regras para adição e atualização de informações \vspace{0.5cm}
+                  \item Padrões para nomes de guias e intervalos de células
               \end{itemize}
     \end{itemize}
 \end{frame}
